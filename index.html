@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,300;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <script defer src="./index.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <div class="form-content">
+          <label class="form_label" for="day">day</label>
+          <input class="form_input" type="text" id="day" name="day" placeholder="DD" />
+          <p class="text_error"></p>
+        </div>
+        <div class="form-content">
+          <label class="form_label" for="month">month</label>
+          <input class="form_input" type="text" id="month" name="month" placeholder="MM" />
+          <p class="text_error"></p>
+        </div>
+        <div class="form-content">
+          <label class="form_label" for="year">year</label>
+          <input class="form_input" type="text" id="year" name="year" placeholder="YYYY"/>
+          <p class="text_error"></p>
+        </div>
+
+        <button class="form_button" type="submit">
+          <img
+            class="icon-arrow"
+            src="./assets/images/icon-arrow.svg"
+            alt="icon-arrow"
+          />
+        </button>
+      </form>
+
+      <hr />
+      <div class="resultado">
+        <p class="resultado_p"><span id="resultado_year">- -</span> Years</p>
+        <p class="resultado_p"><span id="resultado_month">- -</span> Months</p>
+        <p class="resultado_p"><span id="resultado_day">- -</span> Days</p>
+      </div>
+    </div>
+  </body>
+</html>
