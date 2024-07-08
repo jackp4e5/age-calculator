@@ -28,10 +28,14 @@ form.addEventListener("submit", (e) => {
     (numberMonth = parseInt(month.value)),
     (numberYear = parseInt(year.value)),
   ];
-  console.log(transformToNumber);
   const born = `${numberYear}-${numberMonth}-${numberDay}`;
   const userDate = new Date(born);
-  if (
+
+  if (userDate.getMonth() <= today.getMonth()) {
+    resultadoYear.textContent = today.getFullYear() - userDate.getFullYear();
+    resultadoMonth.textContent = today.getMonth();
+    resultadoDay.textContent = today.getDate();
+  } else if (
     !isNaN(today.getFullYear() - userDate.getFullYear()) &&
     userDate.getMonth() != 0 &&
     userDate.getFullYear() != 0
