@@ -22,32 +22,53 @@
   <body>
     <div class="container">
       <form class="form">
-        <div class="form-content">
-          <label class="form_label" for="day">day</label>
-          <input class="form_input" type="text" id="day" name="day" placeholder="DD" />
-          <p class="text_error"></p>
+        <div class="grapper__inputs">
+          <div class="form-content">
+            <label class="form_label" for="day">day</label>
+            <input
+              class="form_input"
+              type="text"
+              id="day"
+              name="day"
+              placeholder="DD"
+            />
+            <p class="text_error"></p>
+          </div>
+          <div class="form-content">
+            <label class="form_label" for="month">month</label>
+            <input
+              class="form_input"
+              type="text"
+              id="month"
+              name="month"
+              placeholder="MM"
+            />
+            <p class="text_error"></p>
+          </div>
+          <div class="form-content">
+            <label class="form_label" for="year">year</label>
+            <input
+              class="form_input"
+              type="text"
+              id="year"
+              name="year"
+              placeholder="YYYY"
+            />
+            <p class="text_error"></p>
+          </div>
         </div>
-        <div class="form-content">
-          <label class="form_label" for="month">month</label>
-          <input class="form_input" type="text" id="month" name="month" placeholder="MM" />
-          <p class="text_error"></p>
+        <div class="grapper__arrow">
+          <button class="form_button" type="submit">
+            <img
+              class="icon-arrow"
+              src="./assets/images/icon-arrow.svg"
+              alt="icon-arrow"
+            />
+          </button>
+          <hr />
         </div>
-        <div class="form-content">
-          <label class="form_label" for="year">year</label>
-          <input class="form_input" type="text" id="year" name="year" placeholder="YYYY"/>
-          <p class="text_error"></p>
-        </div>
-
-        <button class="form_button" type="submit">
-          <img
-            class="icon-arrow"
-            src="./assets/images/icon-arrow.svg"
-            alt="icon-arrow"
-          />
-        </button>
       </form>
 
-      <hr />
       <div class="resultado">
         <p class="resultado_p"><span id="resultado_year">- -</span> Years</p>
         <p class="resultado_p"><span id="resultado_month">- -</span> Months</p>
